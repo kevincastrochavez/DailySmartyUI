@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import reducers from "./reducers";
 import thunk from 'redux-thunk';
@@ -9,9 +9,10 @@ import thunk from 'redux-thunk';
 import Home from "../src/components/home";
 import Results from "./components/results"
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
 import "./style/main.scss";
+import { Field } from "redux-form";
 
 function main() {
   ReactDOM.render(
