@@ -1,6 +1,10 @@
 @import './variables.scss';
+@import './mixins.scss';
 @import './searchBar';
 @import './recentPosts.scss';
+@import './results.scss';
+@import './home.scss';
+
 
 .post-topic {
     margin: 0 4px;
@@ -13,15 +17,6 @@ body {
 .app-wrapper {
     display: grid;
     justify-content: center;
-}
-
-.home {
-    height: 100vw;
-    width: 66vw;
-    display: grid;
-    align-content: space-around;
-    // justify-items: stretch;
-    // grid-template-rows: 1fr 2fr 1fr;
 }
 
 .logo-main, .recent-posts {
