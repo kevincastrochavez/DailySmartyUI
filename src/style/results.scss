@@ -52,6 +52,8 @@
 .post-link {
     min-height: 70px;
     display: flex;
+    flex-basis: 225px;
+    margin-right: 15px;
     
     .post-link-box {
         min-width: 70px;
