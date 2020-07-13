@@ -1,3 +1,4 @@
+  
 .recent-posts {
     display: grid;
     align-content: center;
@@ -19,27 +20,5 @@
                 grid-template-columns: 1fr 1fr 1fr;
             } 
         }    
-    }
-}
-
-.recent-post {
-    display: grid;
-    grid-gap: 12px;
-    .recent-post-title a {
-        text-decoration: none;
-        color: black;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-        &:active {
-            color: black;
-        }
-    }
-
-    .recent-post-topics {
-        color: $color-blue-one;
-        font-size: 13px;
     }
 }

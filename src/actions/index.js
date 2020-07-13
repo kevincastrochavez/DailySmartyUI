@@ -1,7 +1,8 @@
 import { 
-    SET_RECENT_POSTS, 
+    SET_RECENT_POSTS,
     SET_RESULTS_POSTS
 } from './types';
+
 import axios from 'axios';
 
 export function fetchRecentPosts() {
@@ -24,7 +25,7 @@ export function fetchPostsWithQuery(query, callback) {
                     type: SET_RESULTS_POSTS,
                     payload: response.data.posts
                 })
-                if (callback) { callback() }
+                if(callback) { callback() }
             })
     }
 }
